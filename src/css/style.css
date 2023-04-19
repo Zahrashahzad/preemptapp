@@ -1,0 +1,314 @@
+/* ------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #FFF;
+    color: #555;
+    font-family: 'Poppins', 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;  
+}
+
+.clearfix {zoom: 1}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+section{
+    padding: 80px 0px;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.box{
+    padding: 1%;
+}
+
+/* -------------HEADINGS-------------- */
+
+h1,
+h2,
+h3{    
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 25px;
+    color: #FFF;
+    font-size: 200%;
+    word-spacing: 3px;
+    letter-spacing: 1px; 
+}
+h2{
+    color: #000;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px; 
+}
+h3{
+    font-size: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* -------------PARAGRAPH-------------- */
+
+
+
+/* -------------ICONS-------------- */
+
+.icon-big{
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* -------------BUTTON-------------- */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s
+}
+.btn:hover,
+.btn:active{
+    background-color: #7B9858;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color:  #7B9858;
+    border: 1px solid #7B9858;
+    color: #FFF;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #7B9858;
+    color: #7B9858;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color:  #7B9858;
+    border: 1px solid #7B9858;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #7B9858;
+    color: #FFF;
+}
+
+/* ------------------------------------------- */
+/* Header */
+/* ------------------------------------------- */
+
+header{
+    /* background-color: "#EDFDFC";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("hero.jpg"); */
+    height: 80vh;
+    /* background-size: cover;
+    background-position: center; */
+}
+.hero-textbox{
+    position: absolute;
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.filesection{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 640px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+
+}
+
+
+/* -------------NAVIGATION LOGO-------------- */
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/* -------------NAVIGATION LINKS-------------- */
+
+.main-nav{
+    float: right;
+    list-style: none;
+}
+.main-nav li{
+    display: inline;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #3E36A4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-botttom 0.5s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #3E36A4;
+    padding: 8px 0px;
+}
+
+/* ------------------------------------------- */
+/* FEATURES */
+/* ------------------------------------------- */
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+/* ------------------------------------------- */
+/* MEALS */
+/* ------------------------------------------- */
+.section-meals{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ------------------------------------------- */
+/* HOW IT WORKS */
+/* ------------------------------------------- */
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.step-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen{
+    width: 40%;
+    height: auto;
+}
+.work-step{
+    margin-bottom: 50px;
+}
+.work-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 120%;
+    margin-right: 25px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    
+}
+
+th{
+    font-size: 17px;
+}
+td{
+    font-size: 14px;
+}
+.tablebox{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+    /* height: 70vh; */
+}
+
+.head{
+    background-color: #7B9858;
+    color: #fff;
+}
+.download{
+    font-size: 22px;
+    color: #7B9858;
+}
+.download:hover,
+.download:active{
+    font-size: 20px;
+    color: #607d3d;
+}
