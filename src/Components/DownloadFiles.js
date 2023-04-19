@@ -9,7 +9,7 @@ function DownloadFiles() {
     <>
       <div style={{ paddingLeft: "40px", paddingRight: "40px" }}>
         <nav class="navbar navbar-expand-lg  ">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src={logo} width={"100px"}></img>
           </a>
           <button
@@ -27,7 +27,7 @@ function DownloadFiles() {
             class="collapse navbar-collapse d-flex justify-content-end "
             id="navbarNavDropdown"
           >
-            <a class=" btn btn-full" href="/">
+            <a class=" btn btn-full" href="/Uploads">
               Upload Files
             </a>
           </div>
